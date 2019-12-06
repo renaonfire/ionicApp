@@ -10,7 +10,7 @@
 
 <ion-content>
 
-  <div>
+ 
       <ion-card button *ngFor="let item of (results | async)" [routerLink]="['/', 'details', item.imdbID]">
           <ion-card-header>
               
@@ -34,6 +34,6 @@
         </ion-card>
 
 
-  </div>
+
 
 </ion-content>
