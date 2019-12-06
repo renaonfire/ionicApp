@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Movies </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+      <ion-card button *ngFor="let item of (results | async)" [routerLink]="['/', 'details', item.imdbID]">
+          <ion-card-header>
+              
+              <ion-card-title>{{ item.Title }}</ion-card-title>
+
+            </ion-card-header>
+
+          <ion-item class="poster">
+            <img [src]="item.Poster" alt="">
+            
+          </ion-item>
+        
+          <ion-card-content>
+
+            <p>{{ item.Year }}</p>
+
+            <ion-icon slot="end" *ngIf="item.Type == 'movie'" name="videocam"></ion-icon>
+            <ion-icon slot="end" *ngIf="item.Type == 'series'" name="tv"></ion-icon>
+       
+          </ion-card-content>
+        </ion-card>
+
+
+  </div>
+
+</ion-content>

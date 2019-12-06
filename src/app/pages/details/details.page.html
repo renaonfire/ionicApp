@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> {{ information?.Title }} </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+        <ion-card>
+           
+  
+            <ion-item class="poster">
+              <img [src]="information?.Poster" alt="">
+              
+            </ion-item>
+          
+            <ion-card-content>
+  
+            
+              <p><span>Country: </span> {{ information?.Country }}</p>
+              <p><span>Actors: </span>{{ information?.Actors }}</p>
+              <p><span>Description: </span>{{ information?.Plot }}</p>
+  
+              
+            </ion-card-content>
+          </ion-card>
+  
+  
+
+
+</ion-content>
