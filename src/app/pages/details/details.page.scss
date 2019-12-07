@@ -11,16 +11,10 @@ ion-title {
    
 }
 
-
-.poster {
-    height: 200px;
-    padding: 5px;
-}
-
 .poster img {
-    height: 200px;
-    width: auto;
-    margin: 0 auto;
+    max-height: 40vh;
+    object-fit: contain;
+    margin: 5px auto;
 }
 
 ion-card-content p span {
