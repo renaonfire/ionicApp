@@ -1,0 +1,56 @@
+
+
+<ion-content>
+
+  <ion-grid>
+ 
+     <ion-row>
+       <ion-avatar>
+         <img src="/assets/icon/icon.png" alt="">
+       </ion-avatar>
+ 
+     </ion-row>
+ 
+     <ion-row class="sign-title">
+       <h2>Register</h2>
+     </ion-row>
+ 
+     <ion-row>
+       <ion-item class="input-item">
+         <ion-label><ion-icon name="mail"></ion-icon>
+         </ion-label>
+         <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+       </ion-item>
+       <ion-item class="input-item">
+           <ion-label><ion-icon name="lock"></ion-icon>
+           </ion-label>
+           <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+         </ion-item>
+         <ion-item class="input-item">
+          <ion-label><ion-icon name="lock"></ion-icon>
+          </ion-label>
+          <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="cpassword"></ion-input>
+        </ion-item>
+      
+     </ion-row>
+ 
+    
+ 
+ 
+ 
+     <ion-row class="buttons">
+         <ion-button color="dark" shape="round" (click)="register()">Register</ion-button>
+
+     </ion-row>
+ 
+ 
+   
+ 
+  </ion-grid>
+ 
+  <ion-row class="terms-link">
+    <a href="#">Terms and Conditions</a>
+   </ion-row>
+  
+ </ion-content>
+ 

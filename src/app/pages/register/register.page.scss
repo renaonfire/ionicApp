@@ -1,0 +1,46 @@
+ion-content{
+    --ion-background-color:#f3f3f3;
+}
+
+ion-grid {
+    padding: 10vh 5vh 0 5vh;
+   
+}
+
+ion-row {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+ion-input {
+    font-size: 14px;
+}
+
+ion-button {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.sign-title {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.input-item {
+    width: 100%;
+    padding-right: 3vh;
+}
+
+
+.terms-link {
+    font-size: 12px;
+    position: absolute;
+    bottom: 2vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.terms-link a {
+    color: #534242;
+}
+

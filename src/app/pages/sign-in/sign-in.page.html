@@ -19,12 +19,12 @@
       <ion-item class="input-item">
         <ion-label><ion-icon name="mail"></ion-icon>
         </ion-label>
-        <ion-input type="email" placeholder="Email"></ion-input>
+        <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
       </ion-item>
       <ion-item class="input-item">
           <ion-label><ion-icon name="lock"></ion-icon>
           </ion-label>
-          <ion-input type="password" placeholder="Password"></ion-input>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
         </ion-item>
      
     </ion-row>
@@ -41,8 +41,8 @@
 
 
     <ion-row class="buttons">
-        <ion-button fill="outline" color="dark" shape="round" [routerLink]="['/list']">Sign Up</ion-button>
-        <ion-button shape="round" color="dark" [routerLink]="['/list']">Sign In</ion-button>
+        <ion-button fill="outline" color="dark" shape="round" [routerLink]="['/register']">Sign Up</ion-button>
+        <ion-button shape="round" color="dark" (click)="signIn()">Sign In</ion-button>
     </ion-row>
 
 
